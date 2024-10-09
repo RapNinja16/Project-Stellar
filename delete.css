@@ -1,0 +1,148 @@
+
+
+.wrapper {
+    position: relative;
+    height:100vh;
+    overflow-y:auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    margin: 0;
+    
+}
+
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.parallax{
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+}
+
+
+
+.b1{
+    transform: translateZ(-37px) scale(4.9);
+    height: 120%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.b2{
+    transform: translateZ(-26px)scale(3.2);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.b3{
+    transform: translateZ(-22px)scale(3);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    
+}
+.b4{
+    transform: translateZ(-18px)scale(3);
+    height: 100%;
+    width: 100%;
+    position: fixed; 
+    bottom: -5%; /* Position  at the bottom */
+    left: 0; /* Adjust positioning*/
+    z-index: -2;
+}
+.b5{
+    transform: translateZ(-5px)scale(1.8);
+    height: 100%;
+    width: 100%;
+    position: fixed; 
+    bottom:8% ; /* Position at the bottom */
+    left: 0; /* Adjust positioning*/
+    z-index: -2;
+}
+.b6{
+    transform: translateZ(0px)scale(1);
+    height: 400%;
+    width: 100%;
+    position: fixed; 
+    bottom: -275%; /* Position at the bottom */
+    left: 0px; /* Adjust positioning*/
+    z-index: -2;
+    overflow: hidden;
+   
+}
+
+
+.b1,
+.b2
+.b3,
+.b4,
+.b5,
+.b6{
+    object-fit: cover;
+   
+}
+
+section{
+    font-size: 2rem;
+    padding: 2rem;
+
+    color:white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+section img{
+    height: 100%;
+    width: 100%;
+}
+/* Text box Welcome*/
+
+.title{
+    z-index: 222;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding: 0px 100% 0px 100%;
+    max-width: 100%;
+    width: 100%;
+    border: 1px solid rgba(255,255,255,0.1);
+    color:#fff;
+    text-shadow: 0 0 5px black;
+    transform: translate(-10px, -50px); /* Text box location*/
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.text-box p{
+    color: white;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-align: left;
+  
+   
+    
+}
+.text-box h3{
+    border: none;
+    border-bottom: 1px solid white;
+    margin-top:10px;
+    
+}
+
+.text-box{
+    margin-top:100px;
+}
+/*Text Box welcome End*/
+
+
+

@@ -1,0 +1,255 @@
+:root{
+    --main-color:blue;
+    --text-large:30px;
+    --text-medium:20px;
+    --text-small:10px;
+}
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    
+}
+
+
+/* Navbar */
+
+nav, footer{
+    align-items: center;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(23, 22, 31);
+    position: absolute;
+    z-index:99;
+    width: 100vw;
+}
+.logo{
+    margin-right:50vw;
+}
+
+
+a{
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px;
+    margin: 10px;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+a:hover{
+    background-color: rgb(30, 59, 59);
+    border-radius: 50px;
+  
+}
+
+/* END OF NAVBAR */
+
+
+section {
+  font-size: 2rem;
+    padding: 2rem;
+    background-color: #0f1925;
+    color: white;
+    z-index: 1;
+    position: relative;
+    margin: 0; 
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+.wrapper {
+    height: 100vh; 
+    perspective: 20px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 20px;
+}
+
+
+
+
+.another-section {
+    padding: 4rem;
+    background-color: #fff;
+    color: #333;
+    z-index: 99;
+}
+.non-parallax{
+    height: auto; /* Allow this to expand as needed */
+    width: 100%;
+    background-color: #fff;
+}
+/*========================= PARALLAX ===========================*/
+.text {
+    font-size: 7rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+.parallax-desc{
+    font-size: 30px;
+    position: absolute;
+    bottom:0;
+    width: 70%;
+    text-align: center;
+    padding: 20px;
+    color: white;
+
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Keep this at full height for the landing section */
+    transform-style: preserve-3d;
+    z-index: 1; /* Ensure it's below other content */
+}
+
+.b1, .b1-1, .b2, .b3, .b4, .b5, .b6{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    
+}
+/* by adjusting this values, you also adjust the speed of the landing animation 
+    The higher the TranslateZ negative value, the slower it rises
+*/
+.b1 { transform: translateZ(-80px) scale(5.1); }
+.b1-1 { transform: translateZ(-60px) scale(4); }
+.b2 { transform: translateZ(-45px) scale(3.3); }
+.b3 { transform: translateZ(-30px) scale(2.6); }
+.b4 { transform: translateZ(-15px) scale(1.8); }
+.b5 { transform: translateZ(-5px) scale(1.4); }
+.b6 { transform: translateZ(0px) scale(1); }
+
+.text { transform: translateZ(-10px) scale(2); }
+
+
+/*======================= END OF PARALLAX =====================*/
+
+/*======================= Cards ===============================*/
+.card-section{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   gap:10px;
+ 
+    
+}
+.card-section-title{
+    width: 100%;
+
+}
+.cards{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    height: auto;
+
+    margin: 20px;
+    padding: 20px;
+    
+    background-color: #242b33;
+}
+.card-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  
+
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+ 
+}
+.card-picture{
+     border-radius: 100px;
+    display: block;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.card-title{
+    font-size: 30px;
+    position: relative;
+}
+.card-desc{
+    font-size: 20px;
+    position: relative;
+}
+
+
+/*======================= END OF Cards =========================*/
+
+/*======================= ROAD MAP ===============================*/
+.Roadmap{
+    background-color: rgb(155, 97, 150);
+}
+
+/*======================= END OF ROAD MAP =========================*/
+
+
+
+/*======================= INVESTORS ===============================*/
+.Investors{
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.left{
+    width: 50vw;
+    height: 50vh;
+    padding: 20px;
+}
+
+.text-investors{
+    width: 40vw;
+    font-size: 20px;
+}
+
+/*======================= END OF INVESTORS =========================*/
+
+/*======================= MEET THE TEAM ===============================*/
+
+.meet{
+    background-color: rgb(155, 97, 150);
+}
+
+/*======================= END OF MEET THE TEAM =========================*/
+
+
+
