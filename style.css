@@ -149,7 +149,7 @@ section {
     z-index: 99;
 }
 .non-parallax{
-    height: auto; /* Allow this to expand as needed */
+    height: auto; 
     width: 100%;
     background-color: #fff;
 }
@@ -199,9 +199,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Keep this at full height for the landing section */
+    height: 100vh; 
     transform-style: preserve-3d;
-    z-index: 1; /* Ensure it's below other content */
+    z-index: 1; 
 }
 
 .b1, .b1-1, .b2, .b3, .b4, .b5, .b6{
@@ -344,19 +344,19 @@ header {
 
 
 .banner {
-    width: 100%; /* Full width */
+    width: 100%; 
     display: flex;
-    justify-content: center; /* Center the content */
+    justify-content: center;
     height: 100vh;
 
 }
 .banner-container {
     margin: 50px 0px 50px 0px;
-    background: linear-gradient(to right, #3A3A5A, #6363AC); /* Gradient background */
+    background: linear-gradient(to right, #3A3A5A, #6363AC);
     display: flex;
-    align-items: flex-start; /* Align items at the start */
-    justify-content: space-between; /* Space between image and text */
-    width: 100%; /* Full width for the container */
+    align-items: flex-start; 
+    justify-content: space-between; 
+    width: 100%; 
     height: 50vh;
     align-items: center;
     justify-content: center;
@@ -365,11 +365,11 @@ header {
 
 
 .banner-image-container {
-    height: 450px; /* Image height */
-    width: 40vw; /* Image width */
-    margin-right: 20px; /* Space between image and text */
+    height: 450px; 
+    width: 40vw; 
+    margin-right: 20px; 
     position: relative;
-    z-index: 2; /* Ensure image is on top */
+    z-index: 2; 
 
     align-items: center;
     justify-content: center;
@@ -386,7 +386,7 @@ header {
     height: 100%;
     object-fit: cover;
  
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 
     
 }
@@ -397,7 +397,7 @@ header {
     width: 500px;
     position: absolute;
     background-color: red;
-    box-shadow: 0 2px 41px rgba(0, 0, 0, 0.8); /* Shadow for cards */
+    box-shadow: 0 2px 41px rgba(0, 0, 0, 0.8); 
 
 
 
@@ -405,12 +405,12 @@ header {
 }
 
 .banner-text-container {
-    flex: 1; /* Allow text container to fill remaining space */
+    flex: 1; 
   
-    color: white; /* Text color */
-    padding: 20px; /* Padding for text area */
-    border-radius: 10px; /* Rounded corners */
-    z-index: 1; /* Ensure text is below the image */
+    color: white; 
+    padding: 20px; 
+    border-radius: 10px; 
+    z-index: 1; 
     width: 50vw;
     display:flex;
     align-items: center;
@@ -420,11 +420,11 @@ header {
 }
 
 .banner-cards {
-    background-color: #242b33; /* Card background color */
-    border-radius: 8px; /* Rounded corners */
-    margin: 20px 0; /* Vertical margin for cards */
-    padding: 20px; /* Inner padding for cards */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for cards */
+    background-color: #242b33; 
+    border-radius: 8px; 
+    margin: 20px 0; 
+    padding: 20px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
     width: 50vw;
 
     margin:10px;
@@ -435,13 +435,13 @@ header {
 }
 
 .banner-title {
-    font-size: 24px; /* Heading size */
-    margin-bottom: 10px; /* Spacing below the heading */
+    font-size: 24px; 
+    margin-bottom: 10px; 
 }
 
 .banner-desc {
-    font-size: 16px; /* Text size */
-    color: #bfbfc9; /* Slightly lighter text color */
+    font-size: 16px; 
+    color: #bfbfc9; 
 }
 
 
@@ -471,7 +471,7 @@ header {
 }
 
 /* === Button Design === */
-/* From Uiverse.io by adamgiebl */ 
+
 button {
     font-size: 18px;
     letter-spacing: 2px;
