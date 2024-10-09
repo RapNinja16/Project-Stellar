@@ -1,5 +1,5 @@
 :root{
-    --main-color:blue;
+    --main-color:#05141b;
     --text-large:30px;
     --text-medium:20px;
     --text-small:10px;
@@ -18,13 +18,13 @@ body, html {
 
 /* Navbar */
 
-nav, footer{
+nav{
     align-items: center;
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: rgb(23, 22, 31);
+    background-color: #05141b;
     position: absolute;
     z-index:99;
     width: 100vw;
@@ -50,22 +50,80 @@ a:hover{
   
 }
 
+/* Specific styles */
+
+.footer{
+    
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:#05141b;
+    position: absolute;
+    z-index:99;
+    width: 100vw;
+
+}
+
+.ft{
+    margin-right:0vw;
+}
+
+.footer-desc{
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    
+}
+
+
+.footer-title{
+  width: 100%;
+  align-items: center;
+  align-items: center;
+
+  justify-content: center;
+  text-align: center;
+  
+  padding: 0;
+  margin: 30px;
+}
+
+.footer-paragraph{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding: 0;
+    margin: 15px;
+}
+
 /* END OF NAVBAR */
 
 
 section {
   font-size: 2rem;
     padding: 2rem;
-    background-color: #0f1925;
+    background-color: #05141b;
     color: white;
     z-index: 1;
     position: relative;
     margin: 0; 
     padding-top: 10px; 
     padding-bottom: 10px;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -87,7 +145,7 @@ section {
 .another-section {
     padding: 4rem;
     background-color: #fff;
-    color: #333;
+    color: #05141b;
     z-index: 99;
 }
 .non-parallax{
@@ -96,11 +154,33 @@ section {
     background-color: #fff;
 }
 /*========================= PARALLAX ===========================*/
-.text {
-    font-size: 7rem;
+
+
+/*Welcome*/
+.welcome {
+    margin-top: 10rem;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 10em;
     color: white;
-    text-shadow: 0 0 5px black;
+    overflow: hidden;
+    z-index: -2;
+    max-width: 100%;
+    width: 100%;
+    color:#fff;
+    text-shadow: 0 0 10px black;
+    
 }
+  
+  
+  .welcome .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+
+  
+/*Welcome End*/
 
 .parallax-desc{
     font-size: 30px;
@@ -110,6 +190,7 @@ section {
     text-align: center;
     padding: 20px;
     color: white;
+    text-shadow: 0 0 5px black;
 
 }
 
@@ -143,6 +224,8 @@ header {
 .b6 { transform: translateZ(0px) scale(1); }
 
 .text { transform: translateZ(-10px) scale(2); }
+
+
 
 
 /*======================= END OF PARALLAX =====================*/
@@ -207,6 +290,47 @@ header {
 }
 
 
+
+/* === Specific styles === */
+.section1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.meet{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+/* === Utilities === */
+.utilities{
+    width: 350px;
+
+}
+
+/* === Team === */
+
+.team{
+    width: 240px;
+    height: 270px;
+    margin: 10px;
+}
+
+.team .card-desc{
+    font-size: 17px;
+ 
+}
+
+.team .card-title{
+    font-size: 20px;
+}
+
+.team .card-container{
+    height:120px;
+    width: 100%;
+}
+
 /*======================= END OF Cards =========================*/
 
 /*======================= ROAD MAP ===============================*/
@@ -214,11 +338,116 @@ header {
     background-color: rgb(155, 97, 150);
 }
 
-/*======================= END OF ROAD MAP =========================*/
+/*======================= END OF ROAD MAP ======================== */
+
+/*======================= BANNER WITH TEXT ======================= */
+
+
+.banner {
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: center; /* Center the content */
+    height: 100vh;
+
+}
+.banner-container {
+    margin: 50px 0px 50px 0px;
+    background: linear-gradient(to right, #3A3A5A, #6363AC); /* Gradient background */
+    display: flex;
+    align-items: flex-start; /* Align items at the start */
+    justify-content: space-between; /* Space between image and text */
+    width: 100%; /* Full width for the container */
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.banner-image-container {
+    height: 450px; /* Image height */
+    width: 40vw; /* Image width */
+    margin-right: 20px; /* Space between image and text */
+    position: relative;
+    z-index: 2; /* Ensure image is on top */
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+
+    
+}
+
+.banner-container-second{
+    
+    height: 750px;
+    width: 500px;
+    position: absolute;
+    background-color: red;
+    box-shadow: 0 2px 41px rgba(0, 0, 0, 0.8); /* Shadow for cards */
 
 
 
-/*======================= INVESTORS ===============================*/
+    
+}
+
+.banner-text-container {
+    flex: 1; /* Allow text container to fill remaining space */
+  
+    color: white; /* Text color */
+    padding: 20px; /* Padding for text area */
+    border-radius: 10px; /* Rounded corners */
+    z-index: 1; /* Ensure text is below the image */
+    width: 50vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  
+  
+}
+
+.banner-cards {
+    background-color: #242b33; /* Card background color */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px 0; /* Vertical margin for cards */
+    padding: 20px; /* Inner padding for cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for cards */
+    width: 50vw;
+
+    margin:10px;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner-title {
+    font-size: 24px; /* Heading size */
+    margin-bottom: 10px; /* Spacing below the heading */
+}
+
+.banner-desc {
+    font-size: 16px; /* Text size */
+    color: #bfbfc9; /* Slightly lighter text color */
+}
+
+
+/*======================= END OF BANNER WITH TEXT ================  */
+
+/*======================= IMAGE WITH TEXT SECTION ===============================*/
 .Investors{
     padding: 20px;
     align-items: center;
@@ -241,7 +470,82 @@ header {
     font-size: 20px;
 }
 
-/*======================= END OF INVESTORS =========================*/
+/* === Button Design === */
+/* From Uiverse.io by adamgiebl */ 
+button {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid rgb(155, 97, 150);
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: rgb(155, 97, 150);
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+  }
+  
+  button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: rgb(155, 97, 150);
+    z-index: -1;
+  }
+  
+  button:hover, button:focus {
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover:before, button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  
+  button:active {
+    transform: scale(0.9);
+  }
+
+
+.banner{
+ 
+    padding: 50px 0px 50px 0px ;
+}
+
+.banner-wrapper{
+
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: -1;
+    background-color: red;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+
+    position:inherit;
+   
+    
+}
+
+/*======================= END OF IMAGE WITH TEXT SECTION =========================*/
 
 /*======================= MEET THE TEAM ===============================*/
 
